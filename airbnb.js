@@ -28,6 +28,8 @@ function Card (props){
     badgeText="SOLD OUT"
   } else if(props.location==="Online") {
     badgeText= "ONLINE"
+  } else {
+    badgeText="SPOT AVAILABLE"
   }
 
       return (
