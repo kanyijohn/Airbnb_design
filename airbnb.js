@@ -23,8 +23,16 @@ function Hero(){
 }
 
 function Card (props){
+  let badgeText
+  if (props.openspot===0)  {
+    badgeText="SOLD OUT"
+  } else if(props.location==="Online") {
+    badgeText= "ONLINE"
+  }
+
       return (
         <div className="card">
+            <div className="card--badge">{badgeText}</div>
             <img src= {props.img} className="card--image" />
             <div className="card--stats">
               <img src="https://clonebnb-experience.vercel.app/images/star.png" className="card--star" />
@@ -37,6 +45,7 @@ function Card (props){
         </div>
         )
 } 
+
 function Airbnbprops () {
   return (
     <div class
