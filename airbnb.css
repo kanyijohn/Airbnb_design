@@ -82,4 +82,14 @@ section {
 
 .bold {
   font-weight: bold;
+  margin-top: auto;
 }
+
+.card--badge {
+   position: absolute;
+   background-color: white;
+   padding: 5px 7px;
+   border-radius: 2px;
+   font-weight: bold;
+}
+
